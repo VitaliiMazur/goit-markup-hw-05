@@ -520,7 +520,7 @@ body {
   color: var(--primary-bg-color);
 }
 
-.our-work-wrap:hover {
+.our-work-wrap {
   transform: translateY(0%);
 }
 
@@ -751,4 +751,56 @@ body {
 
 .footer-link:hover .go-footer-icon {
   fill: var(--primary-bg-color);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 500ms, visibility 500ms;
+
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+  min-height: 581px;
+  width: 528px;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: transform 300ms;
+  transform: translate(-50%, -50%) scale(1) rotate(0);
+  
+
+  background-color: var(--primary-bg-color);
+}
+
+.close-btn-icon {
+  fill: var(--black-color);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-bg-color);
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.backdrop .is-hidden .modal {
+  transform: scale(0.5) rotate(-290deg);
 }
