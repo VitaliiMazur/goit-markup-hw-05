@@ -129,7 +129,7 @@ body {
 .st-link.current {
   color: var(--acent-color);
 }
- .current::after {
+.current::after {
   position: absolute;
   bottom: -1px;
   left: 0;
@@ -146,7 +146,7 @@ body {
 .pf-link .current {
   color: var(--acent-color);
 }
- .current::after {
+.current::after {
   position: absolute;
   bottom: -1px;
   left: 0;
@@ -807,9 +807,9 @@ body {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   background-color: var(--primary-bg-color);
 }
 
