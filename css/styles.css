@@ -116,6 +116,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition: color var(--hover-duration) var(--hover-time-function);
 
   color: var(--title-text-color);
 }
@@ -143,6 +144,7 @@ body {
 .pf-link {
   position: relative;
 }
+
 .pf-link .current {
   color: var(--acent-color);
 }
@@ -200,6 +202,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition: color var(--primary-text-color);
 
   color: var(--primary-text-color);
 }
@@ -212,6 +215,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition: color var(--primary-text-color);
 
   color: var(--primary-text-color);
 }
@@ -265,6 +269,10 @@ body {
   text-align: center;
   border-radius: 4px;
   border: none;
+  transition: color var(--hover-duration) var(--hover-time-function),
+    background-color var(--hover-duration) var(--hover-time-function),
+    box-shadow var(--hover-duration) var(--hover-time-function),
+    border var(--hover-duration) var(--hover-time-function);
 
   color: var(--title-text-color);
   background-color: var(--our-team-bgc-color);
@@ -386,6 +394,8 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+
+  transition: background-color var(--hover-duration) var(--hover-time-function);
 }
 .team-soc-icon {
   fill: var(--team-soc-icon-color);
@@ -458,6 +468,8 @@ body {
   letter-spacing: 0.06em;
   cursor: pointer;
   min-width: 200px;
+  transition: background-color var(--hover-duration) var(--hover-time-function),
+    color var(--hover-duration) var(--hover-time-function);
 
   background-color: var(--acent-color);
   color: var(--primary-bg-color);
@@ -624,6 +636,8 @@ body {
   align-items: center;
   border: 1px solid var(--team-soc-icon-color);
   border-radius: 4px;
+  transition: fill var(--hover-duration) var(--hover-time-function);
+
   fill: var(--team-soc-icon-color);
 }
 
@@ -749,6 +763,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  transition: background-color var(--hover-duration) var(--hover-time-function);
 }
 
 .go-footer-icon {
@@ -783,14 +798,15 @@ body {
 
 .modal {
   position: absolute;
-    min-height: 581px;
-    width: 528px;
-    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
-    border-radius: 4px;
-    top: 50%;
-    left: 50%;
-    transition: transform 300ms;
-    transform: translate(-50%, -50%) scale(1) rotate(0);
+  min-height: 581px;
+  width: 528px;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
+  border-radius: 4px;
+  top: 50%;
+  left: 50%;
+  transition: transform 300ms;
+  transform: translate(-50%, -50%) scale(1) rotate(0);
 
   background-color: var(--primary-bg-color);
 }
