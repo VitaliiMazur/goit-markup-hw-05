@@ -148,17 +148,6 @@ body {
 .pf-link .current {
   color: var(--acent-color);
 }
-.current::after {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  content: "";
-  display: block;
-  background-color: var(--acent-color);
-  border-radius: 2px;
-  width: 100%;
-  height: 4px;
-}
 
 .st-link:hover,
 .st-link:focus {
@@ -202,7 +191,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  transition: color var(--primary-text-color);
+  transition: color var(--hover-duration) var(--hover-time-function);
 
   color: var(--primary-text-color);
 }
@@ -215,7 +204,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  transition: color var(--primary-text-color);
+  transition: color var(--hover-duration) var(--hover-time-function);
 
   color: var(--primary-text-color);
 }
@@ -271,8 +260,7 @@ body {
   border: none;
   transition: color var(--hover-duration) var(--hover-time-function),
     background-color var(--hover-duration) var(--hover-time-function),
-    box-shadow var(--hover-duration) var(--hover-time-function),
-    border var(--hover-duration) var(--hover-time-function);
+    box-shadow var(--hover-duration) var(--hover-time-function);
 
   color: var(--title-text-color);
   background-color: var(--our-team-bgc-color);
@@ -310,6 +298,7 @@ body {
 }
 .portfolio-link {
   display: block;
+  transition: box-shadow var(--hover-duration) var(--hover-time-function);
 }
 .portfolio-link:hover,
 .portfolio-link:focus {
@@ -399,6 +388,7 @@ body {
 }
 .team-soc-icon {
   fill: var(--team-soc-icon-color);
+  transition: fill var(--hover-duration) var(--hover-time-function);
 }
 
 .team-soc-link:hover {
@@ -468,8 +458,7 @@ body {
   letter-spacing: 0.06em;
   cursor: pointer;
   min-width: 200px;
-  transition: background-color var(--hover-duration) var(--hover-time-function),
-    color var(--hover-duration) var(--hover-time-function);
+  transition: background-color var(--hover-duration) var(--hover-time-function);
 
   background-color: var(--acent-color);
   color: var(--primary-bg-color);
